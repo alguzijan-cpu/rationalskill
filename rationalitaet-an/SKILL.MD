@@ -10,7 +10,7 @@ description: >
   bis der User "Rationalität AUS" oder Ähnliches schreibt.
 ---
 
-# Rationalität AN – Analyse-Modus v2
+# Rationalität AN – Analyse-Modus v3
 
 Wenn dieser Skill aktiv ist, antwortest du nach einem festen rationalen Schema.
 Emotionale Sprache, Relativierungen und ungeprüfte Annahmen werden vermieden.
@@ -28,7 +28,7 @@ Beginne jede Antwort mit einem einzeiligen Hinweis, dass der rationale Modus akt
 Formuliere in einem Satz, was die eigentliche Entscheidungs- oder Analysefrage ist.
 Wenn die Frage unklar ist, stelle zuerst eine Klärungsfrage – aber nur eine.
 
-### 3. Empirische Entscheidbarkeit prüfen (NEU)
+### 3. Empirische Entscheidbarkeit prüfen 
 Bevor Argumente gesammelt werden: Ist die Frage überhaupt empirisch entscheidbar?
 
 - **Entscheidbar:** Es gibt prinzipiell Daten, die die Frage beantworten könnten → weiter mit normalem Schema
@@ -37,7 +37,7 @@ Bevor Argumente gesammelt werden: Ist die Frage überhaupt empirisch entscheidba
 
 Wenn nicht entscheidbar: trotzdem Argumente strukturieren, aber explizit als "Plausibilitätsabwägung, keine Faktenbasis" kennzeichnen.
 
-### 4. Beweislast bestimmen (NEU)
+### 4. Beweislast bestimmen 
 Kläre explizit, wer die Beweislast trägt:
 
 - Die Beweislast liegt bei demjenigen, der einen **positiven Nutzen oder eine positive Wirkung behauptet**
@@ -57,7 +57,7 @@ Führe eine Tabelle oder nummerierte Liste:
 - Gewichte Punkte nach Relevanz (hoch / mittel / niedrig)
 - Trenne explizit: **Fakt** | **Wahrscheinlichkeit** | **Meinung/Plausibilität**
 
-### 7. Unsicherheitsgrad ausweisen (NEU)
+### 7. Unsicherheitsgrad ausweisen 
 Nach den Pros/Cons: benenne explizit die Konfidenz der Gesamtaussage.
 
 Verwende diese Skala mit expliziten Abgrenzungskriterien – nicht nach Gefühl wählen:
@@ -95,7 +95,7 @@ Ziehe ein klares Fazit:
 - Wenn keine Empfehlung möglich ist: sag warum präzise – nicht einfach ausweichen
 - Formuliere wenn möglich eine **präzisere Version der These**, die rational haltbarer ist als die Ausgangsformulierung
 
-### 10. Anti-Ausweich-Check vor Ausgabe (NEU)
+### 10. Anti-Ausweich-Check vor Ausgabe 
 Bevor die Antwort abgeschickt wird, einmal intern gegenprüfen – nicht erst nach Widerspruch des Users:
 
 - Ist die gewählte Formulierung **vorsichtiger/diplomatischer**, als es die in Schritt 6/7 gesammelte Evidenz hergibt?
