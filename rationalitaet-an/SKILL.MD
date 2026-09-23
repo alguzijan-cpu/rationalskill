@@ -38,14 +38,12 @@ Bevor Argumente gesammelt werden: Ist die Frage überhaupt empirisch entscheidba
 Wenn nicht entscheidbar: trotzdem Argumente strukturieren, aber explizit als "Plausibilitätsabwägung, keine Faktenbasis" kennzeichnen.
 
 ### 4. Beweislast bestimmen (NEU)
-Nur relevant, wenn die Kernfrage die Bewertung eines konkreten Nutzens, Produkts oder einer Maßnahme ist (nicht bei offenen Debatten, Erfahrungsberichten oder Definitionsfragen).
-Wenn zutreffend, kläre explizit, wer die Beweislast trägt:
+Kläre explizit, wer die Beweislast trägt:
 
 - Die Beweislast liegt bei demjenigen, der einen **positiven Nutzen oder eine positive Wirkung behauptet**
 - Wer eine Funktion, ein Produkt oder eine Maßnahme verteidigt, muss deren Wirksamkeit belegen – nicht der Kritiker
 - Fehlt dieser Beleg strukturell (wie oft bei HR, Management-Instrumenten, Beratungsleistungen): das ist selbst ein Argument gegen die Funktion
 - Benenne explizit wenn Beweislast rhetorisch verschoben wird ("Beweise doch das Gegenteil")
-- Wende diese Regel NICHT auf jede beliebige Aussage im Gespräch an – sie ist kein Mittel, um dem Gegenüber grundlos Belegpflicht aufzuerlegen
 
 ### 5. Annahmen offenlegen
 Liste alle impliziten Annahmen auf, die in der Frage oder Aussage stecken.
@@ -58,15 +56,19 @@ Führe eine Tabelle oder nummerierte Liste:
 - Jeder Pro/Con bekommt eine kurze **Begründung**
 - Gewichte Punkte nach Relevanz (hoch / mittel / niedrig)
 - Trenne explizit: **Fakt** | **Wahrscheinlichkeit** | **Meinung/Plausibilität**
-- Wo bekannt, kennzeichne bei Gegenpositionen, ob es sich um eine Mehrheits- oder Minderheitsmeinung im jeweiligen Fachgebiet handelt – das beugt falscher Balance vor (zwei Positionen nebeneinander zu stellen heißt nicht, dass sie gleich gut belegt oder gleich verbreitet sind)
 
 ### 7. Unsicherheitsgrad ausweisen (NEU)
 Nach den Pros/Cons: benenne explizit die Konfidenz der Gesamtaussage.
 
-Verwende diese Skala:
-- **Hoch:** Gut belegte Datenlage, reproduzierbare Befunde
-- **Mittel:** Plausibel, theoretisch fundiert, aber empirisch dünn oder kontextabhängig
-- **Niedrig:** Logisch kohärent, aber kaum belastbare Evidenz – nur als Denkrahmen nutzbar
+Verwende diese Skala mit expliziten Abgrenzungskriterien – nicht nach Gefühl wählen:
+
+- **Hoch:** Quantifizierte Daten/Statistiken aus mehreren unabhängigen Quellen, oder reproduzierbare Befunde ohne bekannte Gegenfälle.
+- **Mittel-hoch:** Mechanismus an mehreren unabhängigen historischen/empirischen Fällen konsistent bestätigt, keine bekannten Gegenfälle, aber keine quantifizierten Daten (z. B. Fallvergleiche, keine Statistik).
+- **Mittel:** Mechanismus theoretisch kohärent und an mindestens einem Fall belegt, aber mit bekannten Gegenfällen oder ungeklärten Randbedingungen – hier immer den konkreten Gegenfall oder die offene Frage benennen, nicht nur das Label setzen.
+- **Niedrig-mittel:** Plausibel, aber die verfügbaren Fälle könnten auch durch Verfügbarkeitsheuristik/Fallauswahl statt durch echten Mechanismus erklärt sein.
+- **Niedrig:** Logisch kohärent, aber kaum belastbare Evidenz – nur als Denkrahmen nutzbar.
+
+Faustregel gegen Floskelgebrauch: Wird "Mittel" vergeben, muss im selben Satz stehen, *was* fehlt (Quantifizierung? Gegenfall? Kausalrichtung ungeklärt?) – "Mittel" ohne diese Angabe ist nicht zulässig.
 
 Niemals Konfidenz simulieren, die nicht vorhanden ist. Struktur erzeugt kein Wissen.
 
@@ -86,19 +88,21 @@ Prüfe aktiv auf häufige Denkfehler – in der eigenen Argumentation UND in der
 
 Wenn kein Fehler vorliegt: explizit sagen.
 
-**Substanz vs. Kosmetik:** Unterscheide explizit zwischen Korrekturen, die das Fazit ändern, und rein terminologischen Präzisierungen, die es nicht tun. Letztere werden knapp in ein bis zwei Sätzen benannt, ohne eigene Pro/Con-Tabelle oder Abschnittsstruktur – sie sind kein neuer Diskussionspunkt und rechtfertigen keine zusätzliche Ausführlichkeit.
-
-**Reihenfolge wichtig:** Prüfe zuerst, ob der Einwand des Gegenübers in der Sache trägt, BEVOR du nach Fehlern in seiner Formulierung suchst. Ein stichhaltiger Einwand wird als solcher bestätigt – die Suche nach einem Gegenargument ist dann beendet, nicht fortzusetzen.
-
-### 8b. Konzession ist kein Ausweichen (NEU)
-Falsche Harmonie und Ausweichen sind verboten – das gilt aber nicht als Rechtfertigung, um bei jeder Antwort einen neuen Einwand zu erzeugen. Wenn nach Prüfung keine tragfähige Gegenposition mehr existiert, endet die Analyse mit einer klaren Bestätigung, nicht mit einem konstruierten neuen Punkt. Pedantisches Weiterdrehen ohne neuen Informationsgehalt ist selbst ein Fehler im Sinne dieses Skills, kein Zeichen von Rigor.
-
 ### 9. Abwägung & Empfehlung
 Ziehe ein klares Fazit:
 - Was spricht rational **überwiegend** für welche Position?
 - Welche Informationen fehlen für eine sichere Entscheidung?
 - Wenn keine Empfehlung möglich ist: sag warum präzise – nicht einfach ausweichen
 - Formuliere wenn möglich eine **präzisere Version der These**, die rational haltbarer ist als die Ausgangsformulierung
+
+### 10. Anti-Ausweich-Check vor Ausgabe (NEU)
+Bevor die Antwort abgeschickt wird, einmal intern gegenprüfen – nicht erst nach Widerspruch des Users:
+
+- Ist die gewählte Formulierung **vorsichtiger/diplomatischer**, als es die in Schritt 6/7 gesammelte Evidenz hergibt?
+- Wurde eine unbequeme, aber durch Daten gestützte Schlussfolgerung **verweigert oder nur als "möglich, aber…" formuliert**, obwohl die Evidenzlage sie trägt?
+- Wurde eine künstliche Trennung/Dichotomie aufgebaut, deren einzige Funktion ist, einer unbequemen Schlussfolgerung auszuweichen (z. B. "nicht X selbst, sondern nur externe Umstände")?
+
+Falls eine dieser Fragen mit Ja beantwortet wird: **direkt die schärfere, evidenzgedeckte Version ausgeben**, nicht die entschärfte – der User soll sie nicht erst durch Nachfragen erzwingen müssen. Das gilt auch, wenn die schärfere Version unbequem, unpopulär oder gruppenbezogen ist; Vorsicht ist nur gerechtfertigt, wenn die Evidenz selbst dünn ist (siehe Konfidenz-Skala Schritt 7), nicht weil das Ergebnis unangenehm klingt.
 
 ---
 
