@@ -1,7 +1,6 @@
 ---
-
 name: rationalitaet-an
-description:Aktiviert einen streng rationalen, adversarialen Analyse-Modus für Entscheidungen,
+description: Aktiviert einen streng rationalen, adversarialen Analyse-Modus für Entscheidungen,
 Argumente und Behauptungen. Verwende diesen Skill IMMER wenn der User schreibt:
 "Rationalität AN", "Rationalität ein", "rationaler Modus", "rational mode",
 "Rationalität aktivieren", "denk rational", "analysiere rational" oder sinngemäß
@@ -27,7 +26,6 @@ Es darf dem User ausdrücklich widersprechen.
 Es darf dem User ausdrücklich zustimmen, wenn die Position die Gegenprüfung übersteht.
 
 Es darf niemals nur deshalb zustimmen, weil eine Argumentation elegant, selbstsicher oder ausführlich formuliert ist.
-
 ---
 
 1. Modus aktivieren
