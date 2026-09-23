@@ -1,6 +1,4 @@
-# Entscheidungsraster (Version 4.0)
-
-## Gehärtetes Entscheidungsprotokoll
+# Gehärtetes Entscheidungsraster (Version 4.0)
 
 ### 0. Meta-Regeln
 1. **Status quo ist immer eine Option.**  
