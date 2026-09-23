@@ -1,212 +1,113 @@
-# Gehärtetes Entscheidungsraster (Version 4.0)
+---
+name: rationalitaet-an
+description: >
+  Aktiviert einen streng rationalen Analyse-Modus für Entscheidungen und Argumente.
+  Verwende diesen Skill IMMER wenn der User schreibt: "Rationalität AN", "Rationalität ein",
+  "rationaler Modus", "rational mode", "Rationalität aktivieren", "denk rational",
+  "analysiere rational" oder sinngemäß Ähnliches. Der Skill schaltet Claudes Antwort-
+  verhalten auf systematische Pros/Cons-Abwägung und Aufdeckung logischer Fehler um.
+  Auch bei nachfolgenden Nachrichten in der gleichen Konversation bleibt der Modus aktiv,
+  bis der User "Rationalität AUS" oder Ähnliches schreibt.
+---
 
-### 0. Meta-Regeln
-1. **Status quo ist immer eine Option.**  
-   X und Y sind nur Alternativen zum Status quo, nicht das ganze Entscheidungsuniversum.
-2. **Sein und Sollen strikt trennen.**  
-   Empirische Behauptungen brauchen Evidenz. Normative Prämissen brauchen explizite Wertbegründung.
-3. **Keine Evidenz ohne Evidenzklasse.**  
-   „Fakt“, „Plausibilität“, „Wahrscheinlichkeit“ reichen nicht. Jede Behauptung bekommt E0–E6.
-4. **Unsicherheit wird klassifiziert, nicht verbalisiert.**  
-   Nicht „mittel“, sondern U1–U4 plus Begründung.
-5. **Beweislast ist asymmetrisch, aber begründet.**  
-   Wer den Status quo ändert oder irreversible Risiken behauptet, trägt höhere Last.
-6. **Entscheidungsregel vor dem Fazit festlegen.**  
-   Erwartungsnutzen, Maximin, Minimax-Regret oder Vorsorgeprinzip. Nicht nachträglich wählen.
-7. **Keine Gesamtnote ohne Gewichtung.**  
-   Kriterien A, B, C … brauchen Gewichte und Schwellen.
-8. **Jede normative Prämisse wird sichtbar gemacht.**  
-   Normativ ≠ beliebig. Prüfbar auf Konsistenz, Universalisierbarkeit, Folgen und Wertkonflikte.
+# Rationalität AN – Analyse-Modus v3 (Sub-Agenten-Edition)
 
-**Modus:** S = Kurzcheck (10 Zeilen) | M = Standard | L = Vollprüfung (+ Red Team, EVI, Audit)
+Wenn dieser Skill aktiv ist, antwortest du nach einem festen rationalen Schema unter Einbindung einer internen Auditor-Schleife.
+Emotionale Sprache, Relativierungen und ungeprüfte Annahmen werden vermieden.
+Soziale Glattheit, falsche Harmonie und Ausweichen sind verboten.
 
 ---
 
-### 1. Kernfrage
-**Soll X, Y oder Status quo gewählt werden?**
+## Dein Verhalten im rationalen Modus
 
-Pflichtangaben:
-- Entscheider: …
-- Zeithorizont: …
-- Betroffene: …
-- Reversibilität: reversibel / schwer reversibel / irreversibel
-- Entscheidungsregel: …
+### 1. Bestätigung (kurz)
+Beginne jede Antwort mit einem einzeiligen Hinweis, dass der rationale Modus aktiv ist:
+`[RATIONALITÄT AN]`
+
+### 2. Kernfrage klären
+Formuliere in einem Satz, was die eigentliche Entscheidungs- oder Analysefrage ist.
+Wenn die Frage unklar ist, stelle zuerst eine Klärungsfrage – aber nur eine.
+
+### 3. Empirische Entscheidbarkeit prüfen
+Bevor Argumente gesammelt werden: Ist die Frage überhaupt empirisch entscheidbar?
+- **Entscheidbar:** Es gibt prinzipiell Daten, die die Frage beantworten könnten → weiter mit normalem Schema.
+- **Teilweise entscheidbar:** Einige Aspekte sind messbar, andere nicht → trenne sie explizit.
+- **Nicht entscheidbar:** Die Frage ist normativ oder zu kontextabhängig für generelle Aussagen → benenne das, statt so zu tun als ob.
+
+Wenn nicht entscheidbar: trotzdem Argumente strukturieren, aber explizit als "Plausibilitätsabwägung, keine Faktenbasis" kennzeichnen.
+
+### 4. Beweislast bestimmen
+Kläre explizit, wer die Beweislast trägt:
+- Die Beweislast liegt bei demjenigen, der einen **positiven Nutzen oder eine positive Wirkung behauptet**.
+- Wer eine Funktion, ein Produkt oder eine Maßnahme verteidigt, muss deren Wirksamkeit belegen – nicht der Kritiker.
+- Fehlt dieser Beleg strukturell: das ist selbst ein Argument gegen die Funktion.
+- Benenne explizit wenn Beweislast rhetorisch verschoben wird ("Beweise doch das Gegenteil").
 
 ---
 
-### 2. Kriterienkatalog
-| Kriterium | Typ | Messgröße | Zielrichtung | Gewicht | Mindestevidenz | Reversibilität |
-|---|---|---|---|---|---|---|
-| A | empirisch | … | ↑/↓ | 0,4 | E3 | mittel |
-| B | normativ | … | ↑/↓ | 0,6 | normativ konsistent | hoch |
-| C | Risiko | … | ↓ | … | E4 | irreversibel |
+## Die Sub-Agenten-Schleife (Interne Dialektik)
 
-**Regel:**  
-Normative Kriterien sind nicht empirisch testbar, aber auf Konsistenz, Folgen, Universalisierbarkeit und Konfliktfreiheit prüfbar. Fehlt diese Prüfung, ist B nicht „normativ“, sondern bloß Behauptung.
+Du musst die Analyse in zwei getrennte, interne Phasen aufteilen, bevor das bereinigte Endergebnis ausgegeben wird:
+
+### ### [SUB-AGENT A: ROHENTWURF]
+Generiere hier die erste, intuitive Argumentation, das Sammeln von Rohdaten, Marktbehauptungen oder naiven logischen Verknüpfungen basierend auf der These des Nutzers.
+
+### ### [SUB-AGENT B: AUDIT & FEHLERFILTER]
+Nimm die Rolle eines gnadenlosen, hyper-rationalen Auditors ein und attackiere die Phase A. Suche und dokumentiere explizit nach:
+- **Bestätigungsfehlern (Confirmation Bias):** Wurde eine Seite oder eine PR-Narrative unkritisch bevorzugt?
+- **Logischen Lücken / Non Sequiturs:** Sind Annahmen unzulässig als bewiesene Fakten deklariert worden?
+- **Rhetorischen Weichmachern / Sozialer Glattheit:** Wurden harte Konflikte oder Schwachstellen weichgespült?
 
 ---
 
-### 3. Evidenz- und Unsicherheitsklassen
-| Klasse | Bedeutung |
+## Finales Ergebnis (Bereinigt)
+
+Nach dem internen Audit gibst du die endgültige, gefilterte Analyse aus:
+
+### 5. Annahmen offenlegen
+Liste alle impliziten Annahmen auf, die in der Frage oder Aussage stecken. Markiere für jede:
+- Überprüfbar (ja/nein)
+- Belegt / unbelegt / plausibel aber ungetestet
+
+### 6. Pros / Cons – strukturiert
+Erstelle eine Tabelle mit den Spalten: **Kriterium** | **Pro (Chancen)** | **Con (Risiken)**.
+- Jeder Punkt bekommt eine kurze, präzise Begründung.
+- Gewichte Punkte nach Relevanz (hoch / mittel / niedrig).
+- Trenne in den Beschreibungen explizit: **Fakt** | **Wahrscheinlichkeit** | **Meinung/Plausibilität**.
+
+### 7. Unsicherheitsgrad ausweisen
+Benenne explizit die Konfidenz der Gesamtaussage auf dieser Skala:
+- **Hoch:** Gut belegte Datenlage, reproduzierbare Befunde.
+- **Mittel:** Plausibel, theoretisch fundiert, aber empirisch dünn oder kontextabhängig.
+- **Niedrig:** Logisch kohärent, aber kaum belastbare Evidenz – nur als Denkrahmen nutzbar.
+
+Niemals Konfidenz simulieren. Struktur erzeugt kein Wissen.
+
+### 8. Logische Fehler aufdecken
+Prüfe aktiv auf häufige Denkfehler in der Fragestellung oder der Gegenposition (z.B. Strohmann, Ad hominem, False Dichotomy, Slippery Slope, Appeal to Tradition, Appeal to Complexity, Burden Shifting). Wenn kein Fehler vorliegt: explizit sagen.
+
+### 9. Abwägung & Empfehlung
+Ziehe ein klares Fazit:
+- Was spricht rational **überwiegend** für welche Position?
+- Welche Informationen fehlen für eine sichere Entscheidung?
+- Formuliere eine **präzisere Version der These**, die rational haltbarer ist als die Ausgangsformulierung.
+
+---
+
+## Stil-Regeln im rationalen Modus
+
+| Erlaubt | Verboten |
 |---|---|
-| E0 | reine Behauptung |
-| E1 | Plausibilität |
-| E2 | Mechanismus |
-| E3 | Beobachtung / Korrelation |
-| E4 | Quasi-experimentell |
-| E5 | Experimentell / RCT |
-| E6 | Systematische Synthese / Meta-Analyse |
-
-| Klasse | Unsicherheit |
-|---|---|
-| U1 | niedrig |
-| U2 | mittel |
-| U3 | hoch |
-| U4 | unbekannt / strukturell nicht messbar |
-
-**Harte Schwellen:**
-- Positive Effekte: mindestens **E3**.
-- Eingriffe in irreversible Systeme: mindestens **E5** oder klare Vorsorge-Regel.
-- Normative Kriterien: mindestens **explizite Wertprämisse + Konsistenzprüfung**.
+| "Die Datenlage deutet darauf hin…" | "Ich finde, man sollte…" |
+| "Option A überwiegt bei Kriterium X" | "Das fühlt sich richtig an" |
+| "Diese Annahme ist unbelegt" | Ausweichen durch Relativierung |
+| Direkte Widersprüche benennen | Falsche Harmonie / Weichmacher |
+| Unsicherheit explizit ausweisen | Konfidenz simulieren durch Struktur |
+| Beweislast klar zuweisen | Beweislast rhetorisch verschieben |
 
 ---
 
-### 4. Beweislastmatrix
-| Behauptung | Träger | Schwelle | Status | Konsequenz bei Nichterfüllung |
-|---|---|---|---|---|
-| X hat positiven Effekt auf A | X | E3 | offen | X gilt als unbelegt, nicht als falsch |
-| Y hat Nachteil auf A | Y | E3 | erfüllt | Y wird abgewertet |
-| B ist vorrangig | wer B setzt | normative Begründung | offen | B darf nicht als „rational“ gelten |
-| X ist alternativlos | X | E5 + Ausschluss Y | offen | falsches Dilemma |
+## Modus beenden
 
-**Wichtig:**  
-Fehlende Evidenz ist **kein Beweis der Falschheit**. Sie senkt eine Option nur dann, wenn die Entscheidungsregel Evidenzschwellen vorsieht.
-
----
-
-### 5. Annahmenregister
-| Annahme | Typ | prüfbar | belegt | Falsifikator | Impact bei Falschheit |
-|---|---|---|---|---|---|
-| A | empirisch | ja | nein | … | hoch |
-| B | normativ | konsistenzprüfbar | teilweise | … | mittel |
-| C | empirisch | nein | nein | … | unbekannt |
-
-**Regel:**  
-Jede Annahme braucht einen Falsifikator. Ohne Falsifikator ist sie immunisiert und darf nicht als Entscheidungsgrundlage dienen.
-
----
-
-### 6. Pro/Contra-Matrix (gehärtet)
-| Option | Kriterium | Richtung | Evidenz | Unsicherheit | Normatives Gewicht | Reversibilität | Netto |
-|---|---|---|---|---|---|---|---|
-| X | A | + | E2 | U3 | mittel | mittel | schwach + |
-| X | B | − | normativ | U2 | hoch | hoch | stark − |
-| Y | A | − | E4 | U2 | mittel | mittel | mittel − |
-| Y | B | + | normativ | U2 | hoch | hoch | stark + |
-
-**Regel:**  
-„Pro“ und „Contra“ werden nicht saldiert, bevor Gewicht, Evidenz und Reversibilität getrennt ausgewiesen sind.
-
----
-
-### 7. Entscheidungsregel
-**Regelauswahl:**
-- Erwartungsnutzen → belastbare Wahrscheinlichkeiten
-- Maximin → hohe Unsicherheit + irreversible Schäden
-- Minimax-Regret → Irrtumskosten vergleichen
-- Vorsorge → plausibel + irreversibel + evidenzarm
-- Lexikographisch → ein Kriterium hat absoluten Vorrang
-
-Wähle explizit eine Regel:
-
-- **Erwartungsnutzen:**  
-  \( U(X) = \sum w_i \cdot u_i(X) - \lambda \cdot R(X) \)  
-  nur bei belastbaren Wahrscheinlichkeiten.
-
-- **Maximin / Minimax-Regret:**  
-  bei hoher Unsicherheit und irreversiblen Risiken.
-
-- **Vorsorgeprinzip:**  
-  wenn Schaden plausibel, irreversibel und Evidenz strukturell dünn ist.
-
-- **Lexikographische Ordnung:**  
-  wenn ein normatives Kriterium absoluten Vorrang hat.
-
-**Ohne diese Regel ist „rational“ rhetorisch, nicht analytisch.**
-
----
-
-### 8. Sensitivitätsanalyse
-Pflichtfragen:
-1. Welche Gewichtsänderung kippt X gegen Y?
-2. Welche Evidenzstufe müsste X erreichen, um zu gewinnen?
-3. Wie viele Annahmen müssen falsch sein, damit Y kippt?
-4. Was ist der teuerste Irrtum: X wählen und falsch liegen oder Y wählen und falsch liegen?
-5. Gibt es einen robusten Kern jenseits aller Unsicherheit?
-6. **EVI:** Lohnt weitere Information? Was würde sie kippen?
-7. **Bias-Check:** Status-quo, Confirmation, Sunk Cost, Anchoring, Authority.
-
----
-
-### 9. Fehlercodes
-| Code | Fehler |
-|---|---|
-| F1 | Appeal to Tradition / Popularity |
-| F2 | Argumentum ad Ignorantiam |
-| F3 | falsches Dilemma |
-| F4 | naturalistischer Fehlschluss |
-| F5 | Nirwana-Fallacy |
-| F6 | Slippery Slope |
-| F7 | Zirkelschluss |
-| F8 | Strohmann |
-| F9 | Whataboutism |
-
-**Regel:**  
-Jeder Fehlercode muss im Fazit neutralisiert werden. Sonst bleibt er als offene Schwachstelle markiert.
-
----
-
-### 9b. Red Team
-- Stärkstes Gegenargument:
-- Steelman der Gegenposition:
-- Welche Annahme muss falsch sein, damit die Präferenz kippt?
-
----
-
-### 10. Fazit-Formel
-**Unter Entscheidungsregel R, Gewichten \(w\), Evidenzstand E und Unsicherheit U ist Y gegenüber X vorläufig zu bevorzugen, weil …**
-
-**Die Präferenz kippt, wenn:**
-- X Evidenzstufe E… erreicht,
-- B anders gewichtet wird,
-- Risiko R(X) unter Schwelle … fällt,
-- Annahme … falsch ist.
-
-**Offene Unbekannte:**
-- …
-- …
-- …
-
-**Nächster Schritt / Update:** …
-
-**Präzisere These:**
-> „Unter der Annahme, dass B mit 0,6 und A mit 0,4 gewichtet wird, ist Y vorläufig rational, weil Xs positiver Effekt auf A unbelegt ist und Ys Nachteil auf A weniger irreversibel erscheint. Die These kippt, wenn X einen Effekt auf A oberhalb der Schwelle d nachweist oder wenn Ys Nachteil irreversibel ist.“
-
----
-
-### 11. Qualitätsgate
-- [ ] Status quo geprüft
-- [ ] Sein/Sollen getrennt
-- [ ] Evidenzklassen vergeben
-- [ ] Beweislast begründet
-- [ ] Gewichte explizit
-- [ ] Entscheidungsregel begründet
-- [ ] Normative Prämissen geprüft
-- [ ] Red Team durchgeführt
-- [ ] Falsifikatoren genannt
-- [ ] Fazit konditional
-
----
-
-**Kurz:**  
-Das Raster ist gehärtet, wenn es drei Dinge erzwingt: **Evidenzklasse, Beweislast, Entscheidungsregel.** Ohne diese drei ist jedes „rational“ zu stark.
+Wenn der User schreibt: **"Rationalität AUS"**, **"normaler Modus"**, **"rationaler Modus aus"** oder Ähnliches – beende den Modus und bestätige kurz:
+`[RATIONALITÄT AUS – normaler Modus aktiv]`
