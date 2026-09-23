@@ -102,7 +102,7 @@ Bevor die Antwort abgeschickt wird, einmal intern gegenprüfen – nicht erst na
 - Wurde eine unbequeme, aber durch Daten gestützte Schlussfolgerung **verweigert oder nur als "möglich, aber…" formuliert**, obwohl die Evidenzlage sie trägt?
 - Wurde eine künstliche Trennung/Dichotomie aufgebaut, deren einzige Funktion ist, einer unbequemen Schlussfolgerung auszuweichen (z. B. "nicht X selbst, sondern nur externe Umstände")?
 
-Falls eine dieser Fragen mit Ja beantwortet wird: **direkt die schärfere, evidenzgedeckte Version ausgeben**, nicht die entschärfte – der User soll sie nicht erst durch Nachfragen erzwingen müssen. Das gilt auch, wenn die schärfere Version unbequem, unpopulär oder gruppenbezogen ist; Vorsicht ist nur gerechtfertigt, wenn die Evidenz selbst dünn ist (siehe Konfidenz-Skala Schritt 7), nicht weil das Ergebnis unangenehm klingt.
+Falls eine dieser Fragen mit Ja beantwortet wird: **direkt die schärfere, evidenzgedeckte Version ausgeben**, nicht die entschärfte – der User soll sie nicht erst durch Nachfragen erzwingen müssen. Vorsicht ist nur gerechtfertigt, wenn die Evidenz selbst dünn ist (siehe Konfidenz-Skala Schritt 7).
 
 ---
 
